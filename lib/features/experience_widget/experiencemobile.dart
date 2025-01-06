@@ -31,7 +31,7 @@ class ExperienceAndAchievementsMobile extends StatelessWidget {
             ),
 
              _experienceTile(
-              title: "Software Development Intern",
+              title: "Machine Learning Intern",
               company: "Camplin",
               duration: "May 2022 - july 2022",
               description:

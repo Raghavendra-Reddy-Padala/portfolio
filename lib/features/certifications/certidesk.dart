@@ -14,7 +14,7 @@ class CertificationDesktopWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "Certifications",
+            "Certifications-(Yet to be updated)",
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
@@ -93,7 +93,6 @@ class CertificationDesktopWidget extends StatelessWidget {
   }
 
   void _openLink(String link) {
-    // You can use url_launcher for opening links
     launchUrl(Uri.parse(link));
   }
 }

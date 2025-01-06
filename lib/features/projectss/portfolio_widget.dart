@@ -24,7 +24,7 @@ Widget build(BuildContext context) {
               children: [
                 _buildSection(
                   context,
-                  title: "My Projects",
+                  title: "Projects-(Yet to be updated)",
                   child: _buildProjectsLayout(screenType),
                 ),
                 const SizedBox(height: 40),
@@ -109,40 +109,62 @@ Widget build(BuildContext context) {
   Widget _buildProjectsLayout(ScreenType screenType) {
     final projects = [
       {
-        'image': 'assets/images/chatapp.jpg',
-        'title': 'T-7 chat app',
-        'description': 'The EETA Club app is a platform for students, where they can engage with various club activities, events, and member interactions. It is designed with Flutter and Firebase, offering a smooth experience for university communities. The app promotes collaboration, keeping users updated on upcoming events and news..',
-        'github': 'https://github.com/Raghavendra-Reddy-Padala/chatapp',
-        'appLink': 'http://team07-chatapp.web.app',
-      },
-      {
         'image': 'assets/images/eeta.jpg',
         'title': 'EETA',
-        'description': 'The Team07 Chat app is a simple, efficient, and user-friendly chat application, offering real-time messaging, notifications, and easy access to group chats. Built using Flutter and Firebase, it ensures seamless communication and connection among users',
-        'github': 'https://github.com/Raghavendra-Reddy-Padala/chatapp',
+        'description': 'The EETA Club app is a platform for students, where they can engage with various club activities, events, and member interactions. It is designed with Flutter and Firebase, offering a smooth experience for university communities. The app promotes collaboration, keeping users updated on upcoming events and news..',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala',
         'appLink': 'https://eeta-club.web.app/',
       },
-      {
+        {
+        'image': 'assets/images/Agroobizz.png',
+        'title': 'Agrobizz',
+        'description': 'AgroBizz is a platform that connects farmers and buyers, enabling them to buy and sell agricultural products. It offers a user-friendly interface and secure transactions, fostering a thriving agricultural community.',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/Agrobizz',
+        'appLink': 'https://agrobizz-6dd59.web.app/',
+      },
+         {
+        'image': 'assets/images/AtomicFlow.png',
+        'title': 'AtomicFlow',
+        'description': 'AtomicFlow is a special app which helps users to create habits track them everyday show up their progress , features like pomodore notes and studyrooms which help to build productivity among users',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/AtomicFlow',
+        'appLink': 'https://github.com/Raghavendra-Reddy-Padala/AtomicFlow/blob/main/habit_tracker/README.md',
+      },
+       {
         'image': 'assets/images/chatapp.jpg',
-        'title': 'T-7 chat app',
-        'description': 'The EETA Club app is a platform for students, where they can engage with various club activities, events, and member interactions. It is designed with Flutter and Firebase, offering a smooth experience for university communities. The app promotes collaboration, keeping users updated on upcoming events and news..',
+        'title': 'T-7 app',
+        'description': 'The Team07 Chat app is a simple, efficient, and user-friendly chat application, offering real-time messaging, notifications, and easy access to group chats. Built using Flutter and Firebase, it ensures seamless communication and connection among users',
         'github': 'https://github.com/Raghavendra-Reddy-Padala/chatapp',
         'appLink': 'http://team07-chatapp.web.app',
       },
       {
-        'image': 'assets/images/eeta.jpg',
-        'title': 'EETA',
-        'description': 'The Team07 Chat app is a simple, efficient, and user-friendly chat application, offering real-time messaging, notifications, and easy access to group chats. Built using Flutter and Firebase, it ensures seamless communication and connection among users',
-        'github': 'https://github.com/Raghavendra-Reddy-Padala/chatapp',
-        'appLink': 'https://eeta-club.web.app/',
+        'image': 'assets/images/weathernow.png',
+        'title': 'WeathherNow',
+        'description': 'WeatherNow is a weather app that provides real-time weather information, including temperature, humidity, and weather conditions. It offers a user-friendly interface and accurate weather data for users.',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/WeatherNow',
+        'appLink': 'https://github.com/Raghavendra-Reddy-Padala/WeatherNow/blob/main/README.md',
+      },
+        {
+        'image': 'assets/images/fitflow.png',
+        'title': 'FitFlow',
+        'description': 'Fitflow is my personalized app it is helpful for my gym journey to track my workouts my PRs and to track my progress',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/fitflow-pro',
+        'appLink': 'https://gym-app-6969.web.app/',
       },
       {
-        'image': 'assets/images/chatapp.jpg',
-        'title': 'T-7 chat app',
-        'description': 'The EETA Club app is a platform for students, where they can engage with various club activities, events, and member interactions. It is designed with Flutter and Firebase, offering a smooth experience for university communities. The app promotes collaboration, keeping users updated on upcoming events and news..',
-        'github': 'https://github.com/Raghavendra-Reddy-Padala/chatapp',
-        'appLink': 'http://team07-chatapp.web.app',
+        'image': 'assets/images/chintufy.png',
+        'title': 'Chintufy',
+        'description': 'Chintufy is a basic musicplayer app which helps users to play music from their local storage',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/chintufy',
+        'appLink': 'https://chintufy.web.app/',
       },
+      {
+        'image': 'assets/images/taskmaster.png',
+        'title': 'TaskMaster',
+        'description': 'TaskMaster is a task management app that helps users to manage their tasks By making todolists and setting reminders',
+        'github': 'https://github.com/Raghavendra-Reddy-Padala/TASKMASTER',
+        'appLink': 'https://github.com/Raghavendra-Reddy-Padala/TASKMASTER/blob/main/README.md',
+      },
+       
     ];
     if (screenType == ScreenType.mobile) {
     return SizedBox(
