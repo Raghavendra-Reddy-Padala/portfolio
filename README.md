@@ -25,6 +25,14 @@ This project is built using:
 - Custom animations and interactive elements
 - Responsive design principles
 
+
+## Project link
+
+```bash
+https://padala-raghavendra-reddy.web.app/
+```
+
+
 ## Getting Started
 
 To run this project locally, follow these steps:
@@ -34,6 +42,8 @@ To run this project locally, follow these steps:
 2. Clone the repository:
 ```bash
 git clone https://github.com/YourUsername/portfolio-website.git
+```
+```bash
 cd portfolio-website
 ```
 
@@ -99,9 +109,7 @@ If you'd like to contribute to this project, please:
 
 Feel free to reach out to me for any questions or collaboration opportunities.
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
