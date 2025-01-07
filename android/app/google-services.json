@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083503274897",
+    "project_id": "padala-raghavendra-reddy",
+    "storage_bucket": "padala-raghavendra-reddy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083503274897:android:236f23c4a8a4c9da44c830",
+        "android_client_info": {
+          "package_name": "PadalaRaghavendraReddy.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDZusnxlYIz1cASlWSuNg4nsyakpLuafs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

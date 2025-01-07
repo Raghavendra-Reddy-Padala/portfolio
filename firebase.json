@@ -1,0 +1,33 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "padala-raghavendra-reddy",
+          "appId": "1:1083503274897:android:236f23c4a8a4c9da44c830",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "padala-raghavendra-reddy",
+          "configurations": {
+            "android": "1:1083503274897:android:236f23c4a8a4c9da44c830",
+            "ios": "1:1083503274897:ios:b3930a106f6438b144c830",
+            "macos": "1:1083503274897:ios:b3930a106f6438b144c830",
+            "web": "1:1083503274897:web:92ba53ca4ed1326044c830",
+            "windows": "1:1083503274897:web:1032314d0aebe50844c830"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -12,43 +12,36 @@ class TechstackDesktopWidget extends StatefulWidget {
 }
 
 class _TechstackDesktopWidgetState extends State<TechstackDesktopWidget> {
-  String? selectedSkill; // Tracks the name of the hovered or tapped skill
+  String? selectedSkill;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 50),
+      margin: const EdgeInsets.symmetric(vertical: 50),
       child: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 20),
-
-            AppOutlinedButton(title: "Skills", onTap: () {}),
-            const SizedBox(height: 20),
-
-            Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: techStackImages.entries
-                      .take(7)
-                      .map((entry) => techStackCircle(entry.key, entry.value))
-                      .toList(),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: techStackImages.entries
-                      .skip(7)
-                      .take(6)
-                      .map((entry) => techStackCircle(entry.key, entry.value))
-                      .toList(),
-                ),
-              ],
+            Text(
+              'My Tech Stack',
+              style: TextStyle(
+                color: AppColors.purple,
+                fontFamily: 'Preah',
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-
+            const SizedBox(height: 40),
+            Wrap(
+              spacing: 20,
+              runSpacing: 20,
+              alignment: WrapAlignment.center,
+              children: techStackImages.entries
+                  .map((entry) => techStackCircle(entry.key, entry.value))
+                  .toList(),
+            ),
             if (selectedSkill != null) ...[
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
               Text(
                 selectedSkill!,
                 style: const TextStyle(
@@ -58,24 +51,32 @@ class _TechstackDesktopWidgetState extends State<TechstackDesktopWidget> {
                 ),
               ),
             ],
-
-            const SizedBox(height: 20),
-
-            RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                style: const TextStyle(
-                    color: Colors.white, fontFamily: 'Preah', fontSize: 24),
-                children: [
-                  const TextSpan(
-                      text:
-                          'Here are some of the technologies which I have worked on and had build few interesting '),
-                  TextSpan(
-                      text: 'projects\n',
-                      style: TextStyle(color: AppColors.purple)),
-                  const TextSpan(
-                      text: 'with them '),
-                ],
+            const SizedBox(height: 40),
+            Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: AppColors.violet.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Preah',
+                    fontSize: 20,
+                  ),
+                  children: [
+                    const TextSpan(
+                      text: 'These are the technologies I\'ve worked with to build ',
+                    ),
+                    TextSpan(
+                      text: 'interesting projects',
+                      style: TextStyle(color: AppColors.purple),
+                    ),
+                    const TextSpan(text: '. Always eager to learn more!'),
+                  ],
+                ),
               ),
             ),
           ],
@@ -88,30 +89,30 @@ class _TechstackDesktopWidgetState extends State<TechstackDesktopWidget> {
     return GestureDetector(
       onTap: () {
         setState(() {
-          selectedSkill = skillName; // Update skill name on tap
+          selectedSkill = skillName;
         });
       },
       child: MouseRegion(
         onEnter: (_) {
           setState(() {
-            selectedSkill = skillName; // Update skill name on hover
+            selectedSkill = skillName;
           });
         },
         onExit: (_) {
           setState(() {
-            selectedSkill = null; // Clear skill name when hover exits
+            selectedSkill = null;
           });
         },
         child: Tooltip(
-          message: skillName, // Show tooltip on hover
+          message: skillName,
           child: Container(
-            margin: const EdgeInsets.all(6),
-            height: 54,
-            width: 54,
-            padding: const EdgeInsets.all(8),
+            height: 80,
+            width: 80,
+            padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.violet,
+              color: AppColors.violet.withOpacity(0.1),
+              border: Border.all(color: AppColors.purple, width: 2),
             ),
             child: AppImageWidget(
               path: imagePath,
