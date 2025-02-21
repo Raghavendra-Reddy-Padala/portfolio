@@ -48,7 +48,7 @@ class NavBarDesktopWidget extends StatelessWidget {
                 AppOutlinedButton(
                   title: 'Resume',
                   onTap: () {
-                    launchUrl(Uri.parse("https://res.cloudinary.com/dbmiv3gks/image/upload/v1736263114/resume.pdf"));
+                    launchUrl(Uri.parse("https://res.cloudinary.com/dbmiv3gks/image/upload/v1740159722/resume_9_gwdmcn.pdf"));
                   },
                 ),
               ],

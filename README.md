@@ -15,7 +15,7 @@ In this portfolio website, you'll find:
 - Smooth animations and transitions
 - Cross-browser compatibility
 
-## Tech Stack
+## Tech Stac
 
 This project is built using:
 
